@@ -1,9 +1,10 @@
 const express = require('express');
 const path = require('path')
+const bodyParser = require('body-parser')
 const  app = express()
 
 const PORT = 4000;
-
+app.use(bodyParser.urlencoded({ extended: true}))
 app.listen(PORT, (req,res) =>{
     console.log('server is runing at:', PORT)
 })
@@ -26,4 +27,10 @@ app.listen(PORT, (req,res) =>{
 // })
 
 app.use(express.static(path.join(__dirname,'public')))
-app.use(express.static(path.join(__dirname,'registration')))
+
+app.get('/signup',(req,res)=>{
+    res.sendFile(path.join(__dirname, 'registration', 'SignUp.html'))
+})
+app.post('/signup',(req,res)=>{
+    res.send(req.body)
+})
