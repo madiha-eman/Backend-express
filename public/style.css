@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
 .head{
     margin: 0 auto;
     text-align: center;
@@ -14,5 +17,48 @@ p{
 
 }
 h1{
-    color: blue;
+    color: red;
+}
+.fs-1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.home-btn{
+    margin:auto!important;
+    text-align: center;
+
+}
+.navbar-brand{
+    font-family: 'Pacifico', cursive;
+
+}
+/* navbar */
+
+.navbar{
+    background-color: red!important;
+}
+.nav-link, .navbar-brand{
+    color: white!important;
+    font-weight: 500!important;
+
+}
+a{
+   text-decoration: none!important;
+   color: red;
+}
+.btn{
+    border: 2px solid red!important;
+    color: white!important;
+    font-weight: 500;
+}
+.btn, a:hover{
+    color:white!important;
+ 
+}
+
+.btn:hover{
+    color: white!important;
+    border: 2px solid red!important;
+    background-color: red;
 }

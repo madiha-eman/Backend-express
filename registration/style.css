@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+    background-color: rgb(230, 106, 106)!important;
+
+}
+.sign-up{
+    box-sizing: border-box;
+    border: 2px solid red;
+    margin: auto;
+    width: 400px;
+    margin-top: 90px;
+    padding: 20px;
+    box-shadow:0 0 18px 0 red;
+    
+
+}
+@media screen and (max-width: 768px){
+    .sign-up{
+        box-sizing: border-box;
+        border: 2px solid red;
+        margin: auto;
+        width: 230px;
+        margin-top: 90px;
+        padding: 20px;
+        box-shadow:0 0 18px 0 red;
+        
+    
+    }
+}
+.inp{
+    outline: none!important;
+    border-bottom: 2px solid white!important ;
+    color: white!important;
+}
+
+.inp:focus{
+    outline: none!important;
+}
+.btn{
+    font-family: 'Pacifico', cursive;
+    border: 2px solid red!important;
+    background-color: red!important;
+    color: white!important;
+    letter-spacing: 0.1em;
+
+}
+.btn:hover{
+    background-color: rgb(240, 57, 57)!important;
+    border: 2px solid rgb(240, 57, 57)!important;
+
+}
+.fs-1{
+    text-align: center;
+    padding-bottom: 7px;
+    font-family: 'Pacifico', cursive;
+    color: white;
+}
